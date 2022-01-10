@@ -2,4 +2,91 @@
     --gray:#DCCFCB;
     --green:#62B099;
     --brown: #684241;
+    --white: #efefef;
+    --black: #010101;
+    --font-style1: 'Jost';
+    --font-style2: 'Oxygen';
+    --font-style3: 'Oxygen Mono';
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+}
+body{
+    background-color: var(--gray);
+    font-family: var(--font-style2);
+}
+
+section{
+    display: flex;
+    max-width: 1200px;
+    max-height: 100vh;
+    padding: 3rem 0 0 0;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap:12%;
+}
+
+section div{
+    flex-basis:  25%  ;
+}
+
+section h2{
+    font-family: var(--font-style1);
+    font-size: 2rem;
+    font-weight: 900w;
+    margin: 0;
+    padding: 0;
+}
+
+figure{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    min-height:  28em;
+    background-color: var(--brown);
+    box-shadow: 9px 11px 0px -1px rgba(0,0,0,0.9);
+    gap:4%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+figcaption {
+    color: var(--white);
+    align-self: flex-end;
+    text-align: right;
+    padding: 1rem;
+  }
+img{
+    max-height: 20rem;
+    width: 80%;
+    margin: auto 0;
+}
+
+.middle{
+    display: grid;
+    grid-template-rows: repeat(11, 1fr);
+}
+
+.middle figure{
+    grid-row: 2/8;
+    background-color: var(--green);
+}
+
+.end figure{
+    background-color: var(--black);
+    box-shadow: 9px 11px 0px -1px rgba(0,0,0,0.6);
+}
+.end figure img{
+    color: white;
+    fill: currentcolor;
+}
+div figcaption{
+    font-family: var(--font-style3);
 }
