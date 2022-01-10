@@ -107,3 +107,10 @@ div:nth-child(odd){
     from {bottom:-100px; opacity:0 } 
     to { bottom:0px; opacity:1 }
 }
+
+@media (max-width:550px) {
+    section,.middle{
+        display: block;
+        margin: 2em 0;
+    }
+}
