@@ -25,10 +25,9 @@ body{
 section{
     display: flex;
     max-width: 1200px;
-    max-height: 100vh;
-    padding: 3rem 0 0 0;
+    max-height: 90vh;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 30px auto 20px;
     gap:12%;
 }
 
@@ -87,6 +86,24 @@ img{
     color: white;
     fill: currentcolor;
 }
-div figcaption{
+div figcaption:nth-child(1){
     font-family: var(--font-style3);
+}
+
+div:nth-child(even){
+    position: relative;
+    animation: top-anime 1s ease-in;
+}
+div:nth-child(odd){
+    position: relative;
+    animation: bottom-anime 1s ease-in;
+}
+
+@keyframes top-anime{
+    from {top:-100px; opacity:0 } 
+    to { top:0px; opacity:1 }
+}
+@keyframes bottom-anime{
+    from {bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
 }
