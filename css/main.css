@@ -69,12 +69,10 @@ img{
 }
 
 .middle{
-    display: grid;
-    grid-template-rows: repeat(11, 1fr);
+    align-self: center;
 }
 
 .middle figure{
-    grid-row: 2/8;
     background-color: var(--green);
 }
 
